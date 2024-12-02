@@ -40,7 +40,7 @@ pub mod day_1 {
         return sum;
     }
 
-    pub fn part_2(lines: Vec<String>) -> i32 {
+    pub fn _part_2(lines: Vec<String>) -> i32 {
         let mut left: Vec<i32> = vec![];
         let mut right: HashMap<i32, i32> = HashMap::new();
 
