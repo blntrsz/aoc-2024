@@ -48,7 +48,7 @@ pub mod day_2 {
         return sum;
     }
 
-    fn parse_levels(levels: Vec<&str>) -> i32 {
+    fn _parse_levels(levels: Vec<&str>) -> i32 {
         let mut previous_level = 0;
         let mut is_safe = true;
         let mut is_increasing = true;
@@ -92,20 +92,20 @@ pub mod day_2 {
         return 0;
     }
 
-    pub fn part_2(lines: Vec<String>) -> i32 {
+    pub fn _part_2(lines: Vec<String>) -> i32 {
         let mut sum = 0;
 
         for line in lines {
             let levels: Vec<&str> = line.split(" ").collect();
             let mut line_sum = 0;
 
-            line_sum += parse_levels(levels.clone());
+            line_sum += _parse_levels(levels.clone());
 
             for index in 0..levels.len() {
                 let mut new_levels = levels.clone();
                 new_levels.remove(index);
 
-                line_sum += parse_levels(new_levels);
+                line_sum += _parse_levels(new_levels);
             }
 
             if line_sum > 0 {
