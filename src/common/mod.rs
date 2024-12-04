@@ -11,7 +11,7 @@ pub mod common {
         }
     }
 
-    pub fn _string_to_lines(file: String) -> Vec<String> {
+    pub fn string_to_lines(file: String) -> Vec<String> {
         file.lines().map(|line| line.to_string()).collect()
     }
 }

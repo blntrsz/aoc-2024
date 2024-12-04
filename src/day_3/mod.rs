@@ -21,7 +21,7 @@ pub mod day_3 {
         return sum;
     }
 
-    pub fn part_2(line: String) -> i32 {
+    pub fn _part_2(line: String) -> i32 {
         let re = Regex::new(r"mul\(\d+,\d+\)").unwrap();
         let mut sum = 0;
 
