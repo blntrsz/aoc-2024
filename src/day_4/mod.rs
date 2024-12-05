@@ -113,7 +113,7 @@ pub mod day_4 {
         return 0;
     }
 
-    pub fn part_2(lines: Vec<String>) -> i32 {
+    pub fn _part_2(lines: Vec<String>) -> i32 {
         let matrix: Vec<Vec<String>> = lines
             .iter()
             .map(|line| {
